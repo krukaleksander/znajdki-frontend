@@ -2,7 +2,7 @@ import React from 'react';
 import {Menu, MenuButton, MenuItem, MenuList, Link, Flex, Image} from "@chakra-ui/react";
 import {footerTextFont} from '../stores/fonts.store';
 import {useStore} from "@nanostores/react";
-import {whiteColorBackground, blackColorText, grayColorBackground} from "../stores/contrast.store";
+import {whiteColorBackground, blackColorText} from "../stores/contrast.store";
 import logo from '../assets/images/logo.jpg';
 import {FaBars} from "react-icons/fa";
 
@@ -10,12 +10,12 @@ const MenuMobile = () => {
     const fontSize = useStore(footerTextFont)
     const whiteColor = useStore(whiteColorBackground)
     const blackColor = useStore(blackColorText)
-    const grayColorBg = useStore(grayColorBackground)
+    const bgColor = useStore(whiteColorBackground)
     return (
-        <Flex display={{base: 'flex', lg:'none'}} bgColor={grayColorBg} justifyContent={'center'} alignItems={'center'} minHeight={'80px'}>
+        <Flex display={{base: 'flex', lg:'none'}} bgColor={bgColor} justifyContent={'center'} alignItems={'center'} minHeight={'80px'}>
             <Image src={logo} width={'120px'}/>
             <Menu>
-                <MenuButton zIndex={2} display={{lg:'none'}} fontSize={'25px'} color={'white'} pos={'absolute'} top={'30px'} right={'10px'}>
+                <MenuButton zIndex={2} display={{lg:'none'}} fontSize={'25px'} color={'black'} pos={'absolute'} top={'30px'} right={'10px'}>
                     <FaBars />
                 </MenuButton>
                 <MenuList fontSize={fontSize} color={blackColor} bgColor={whiteColor}>
