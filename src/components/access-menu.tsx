@@ -25,7 +25,7 @@ const AccessMenu = () => {
     const {isOpen, onOpen, onClose} = useDisclosure()
     const boxRef = React.useRef() as React.MutableRefObject<HTMLInputElement>;
     return (
-        <Box ref={boxRef} w={'40px'} zIndex={2} pos={{base: "absolute", lg:'fixed'}} top={'30px'} left={'5px'} onClick={onOpen} bgColor={'white'}>
+        <Box ref={boxRef} w={'40px'} zIndex={2} pos="absolute" top={'30px'} left={'5px'} onClick={onOpen} bgColor={'white'}>
             <Image src={InvalidSing} cursor={'pointer'}/>
             <Drawer isOpen={isOpen} placement='top' onClose={onClose} finalFocusRef={boxRef}>
                 <DrawerOverlay />

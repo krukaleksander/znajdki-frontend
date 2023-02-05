@@ -12,7 +12,7 @@ const MenuMobile = () => {
     const blackColor = useStore(blackColorText)
     const grayColorBg = useStore(grayColorBackground)
     return (
-        <Flex display={{lg:'none'}} bgColor={grayColorBg} justifyContent={'center'} alignItems={'center'} minHeight={'80px'}>
+        <Flex display={{base: 'flex', lg:'none'}} bgColor={grayColorBg} justifyContent={'center'} alignItems={'center'} minHeight={'80px'}>
             <Image src={logo} width={'120px'}/>
             <Menu>
                 <MenuButton zIndex={2} display={{lg:'none'}} fontSize={'25px'} color={'white'} pos={'absolute'} top={'30px'} right={'10px'}>
