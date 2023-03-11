@@ -16,9 +16,9 @@ const Etr = () => {
   const textColor = useStore(blackColorText);
   const circleColor = useStore(greenColorText);
   return (
-    <Box color={textColor} p={"15px"} fontSize={textFontSize}>
+    <Box color={textColor} p={"15px"} m={'0 auto'} fontSize={textFontSize} width={{base: '100%', lg: '600px' }}>
       <Heading fontSize={headerFontSize}>ETR</Heading>
-      <Heading fontWeight={"bolder"} fontSize={textFontSize}>
+      <Heading mt={'20px'} fontWeight={"bolder"} fontSize={textFontSize}>
         Fundacja Znajdki istnieje od 2012 roku.
       </Heading>
       <EtrWhatWeDo textFontSize={textFontSize} circleColor={circleColor}/>
