@@ -9,6 +9,9 @@ import EtrContactWithFoundation from "../components/etr/contact-with-foundation"
 import EtrWhatAnimalsNeed from "../components/etr/what-animals-need";
 import EtrAboutActivity from "../components/etr/about-activity";
 import EtrHowHelp from "../components/etr/how-help";
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
+import etr from '../assets/sounds/etr.mp3';
 
 const Etr = () => {
   const headerFontSize = useStore(smallerHeadingFont);
@@ -18,6 +21,10 @@ const Etr = () => {
   return (
     <Box color={textColor} p={"15px"} m={'0 auto'} fontSize={textFontSize} width={{base: '100%', lg: '600px' }}>
       <Heading fontSize={headerFontSize}>ETR</Heading>
+        <AudioPlayer
+            autoPlay
+            src={etr}
+        />
       <Heading mt={'20px'} fontWeight={"bolder"} fontSize={textFontSize}>
         Fundacja Znajdki istnieje od 2012 roku.
       </Heading>
