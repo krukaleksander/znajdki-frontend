@@ -5,10 +5,10 @@ import { smallerHeadingFont, textFont } from "../stores/fonts.store";
 import { blackColorText, greenColorText } from "../stores/contrast.store";
 import EtrWhatWeDo from "../components/etr/what-we-do";
 import EtrOurRules from "../components/etr/our-rules";
-import HowHelp from "../components/etr/how-help";
 import EtrContactWithFoundation from "../components/etr/contact-with-foundation";
 import EtrWhatAnimalsNeed from "../components/etr/what-animals-need";
 import EtrAboutActivity from "../components/etr/about-activity";
+import EtrHowHelp from "../components/etr/how-help";
 
 const Etr = () => {
   const headerFontSize = useStore(smallerHeadingFont);
@@ -23,7 +23,7 @@ const Etr = () => {
       </Heading>
       <EtrWhatWeDo textFontSize={textFontSize} circleColor={circleColor}/>
       <EtrOurRules textFontSize={textFontSize} circleColor={circleColor}/>
-      <HowHelp textFontSize={textFontSize} circleColor={circleColor}/>
+      <EtrHowHelp textFontSize={textFontSize} circleColor={circleColor}/>
       <EtrWhatAnimalsNeed textFontSize={textFontSize} circleColor={circleColor}/>
       <EtrContactWithFoundation textFontSize={textFontSize} circleColor={circleColor}/>
       <EtrAboutActivity textFontSize={textFontSize} circleColor={circleColor}/>
