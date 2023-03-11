@@ -8,6 +8,7 @@ import EtrOurRules from "../components/etr/our-rules";
 import HowHelp from "../components/etr/how-help";
 import EtrContactWithFoundation from "../components/etr/contact-with-foundation";
 import EtrWhatAnimalsNeed from "../components/etr/what-animals-need";
+import EtrAboutActivity from "../components/etr/about-activity";
 
 const Etr = () => {
   const headerFontSize = useStore(smallerHeadingFont);
@@ -25,6 +26,7 @@ const Etr = () => {
       <HowHelp textFontSize={textFontSize} circleColor={circleColor}/>
       <EtrWhatAnimalsNeed textFontSize={textFontSize} circleColor={circleColor}/>
       <EtrContactWithFoundation textFontSize={textFontSize} circleColor={circleColor}/>
+      <EtrAboutActivity textFontSize={textFontSize} circleColor={circleColor}/>
     </Box>
   );
 };
