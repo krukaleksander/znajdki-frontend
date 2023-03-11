@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import { useStore } from "@nanostores/react";
 import { smallerHeadingFont, textFont } from "../stores/fonts.store";
 import { blackColorText, greenColorText } from "../stores/contrast.store";
@@ -27,6 +27,8 @@ const Etr = () => {
       <EtrWhatAnimalsNeed textFontSize={textFontSize} circleColor={circleColor}/>
       <EtrContactWithFoundation textFontSize={textFontSize} circleColor={circleColor}/>
       <EtrAboutActivity textFontSize={textFontSize} circleColor={circleColor}/>
+      <Text pt={'10px'}>Przytulisko jest dostępne dla osób ze szczególnymi potrzebami.</Text>
+      <Text pt={'10px'}>Wizyta z psem asystującym tylko po wcześniejszym uzgodnieniu.</Text>
     </Box>
   );
 };
